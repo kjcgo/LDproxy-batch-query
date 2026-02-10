@@ -12,3 +12,6 @@ Performing a batch query to retrieve SNPs in linkage disequilibrium with a list 
 # Project Description
 
   This project aims to conduct a batch query to retrieve associated variants with $R^2 ≥ .01$ by using an R to access the LDLink API, then parsing the resulting data to remove variants that do not meet the threshold. 
+
+LDLink API Documentation: https://cran.r-project.org/web/packages/LDlinkR/LDlinkR.pdf
+  
