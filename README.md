@@ -9,7 +9,7 @@ Performing a batch query to retrieve SNPs in linkage disequilibrium with a list 
 
   Because of LD and because only a select group of SNPs are genotyped for GWAS, it is worthwile to also examine variants that are correlated with the identified variants of the study. This is achievable thanks to tools like [LDproxy](https://ldlink.nih.gov/ldproxy?ref=53731) which retrieve proxy variants given an rsID (Reference SNP cluster ID). 
 
-# Project Description
+# Description
 
   This project aims to conduct a batch query to retrieve associated variants with $R^2 ≥ .01$ by using an R to access the LDLink API, then parsing the resulting data to remove variants that do not meet the threshold. 
 
