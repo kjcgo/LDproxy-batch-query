@@ -8,3 +8,5 @@ LDproxy_batch(
   append = TRUE,
   genome_build = "grch37",
 )
+df <- read.table("combined_query_snp_list_grch37.txt", header=FALSE)
+write.csv(df, "query_snp_list.csv", row.names=FALSE)
