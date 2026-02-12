@@ -9,6 +9,7 @@ df_subset.columns = ["#", "query", "rs_number", "coord", "r^2"]
 df_subset['#'] = pd.to_numeric(df_subset['#'], errors='coerce')
 df_subset['r^2'] = pd.to_numeric(df_subset['r^2'], errors='coerce')
 df_subset = df_subset.dropna(subset=["#", "r^2"])
+
+#bound r^2 values
 df_subset = df_subset[df_subset['r^2'] >= 0.1]
-#save
 df_subset.to_csv("modified_query_snp_list.csv", index=False)
